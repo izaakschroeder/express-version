@@ -38,6 +38,7 @@
 	},
 
 	"globals": {
-		"console": false
+		"console": false,
+		"Promise": true
 	}
 }

@@ -1,6 +1,6 @@
 {
 	"name": "express-version",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"author": "Izaak Schroeder <izaak.schroeder@gmail.com>",
 	"scripts": {
 		"test": "npm run lint && npm run spec && npm run coverage",
@@ -9,11 +9,15 @@
 		"coverage": "istanbul check-coverage --statement 100 --branch 100 --function 100"
 	},
 	"main": "lib/version.js",
+	"dependencies": {
+		"bluebird": "^2.9.7",
+		"lodash": "^3.1.0"
+	},
 	"peerDependencies": {
-		"express": "4.x"
+		"express": "^4.11.2"
 	},
 	"devDependencies": {
-		"express": "4.x",
+		"express": "^4.11.2",
 		"eslint": "*",
 		"eslint-plugin-nodeca": "*",
 		"mocha": "*",
