@@ -2,6 +2,14 @@
 	"name": "express-version",
 	"version": "0.2.0",
 	"author": "Izaak Schroeder <izaak.schroeder@gmail.com>",
+	"description": "Middleware for package.json and git metadata.",
+	"keywords": [ "express", "version", "git", "package.json" ],
+	"license": "CC0-1.0",
+	"homepage": "https://github.com/izaakschroeder/express-version",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/izaakschroeder/express-version.git"
+	},
 	"scripts": {
 		"test": "npm run lint && npm run spec && npm run coverage",
 		"spec": "NODE_PATH=lib NODE_ENV=test istanbul cover node_modules/.bin/_mocha -- -r test/helpers/chai -r test/helpers/sinon -R spec test/spec",
